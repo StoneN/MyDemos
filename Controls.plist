@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Controls.plist
+   MyDemos
+
+   Created by StoneNan on 2017/5/26.
+   Copyright (c) 2017年 StoneNan. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <string>UILabel</string>
+        <string>UITextField</string>
+        <string>UIButton</string>
+        <string>UISwitch</string>
+        <string>UISegementControl</string>
+        <string>UIImageView</string>
+        <string>UIProgressView</string>
+        <string>UISlider</string>
+        <string>UIAlertView</string>
+    </array>
+</plist>
