@@ -61,7 +61,7 @@ func filterContentForSearchText(_ searchText: String, scope: String = "All") {
 
 ![severalsections](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/severalsections.png)
 
-![todo](/Users/stone/Desktop/MyDemos/PicturesForREADME/todo.png)
+![todo](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/todo.png)
 
 这个 Demo 练习了最简单的 UITableView 使用，包括：基本的多 Section TableView，和基础的 Add，Delete，Move TableViewCell 的操作等。
 
@@ -69,11 +69,11 @@ func filterContentForSearchText(_ searchText: String, scope: String = "All") {
 
 ## DrawingBoard
 
-![drawingBoard](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/drawingBoard.png)
+![drawingBoard](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/drawingBoard.png)
 
 DrawingBoard 这个 Demo 是一个简单的画板应用，实现了自定义画笔粗细颜色，和一些图形的绘制，以及对画板上各图形元素的选中、平移操作。其中在绘制多边形(正多边形)时，用户可自定义边数，默认为3，如下：
 
-![drawingBoard1](/Users/stone/Desktop/MyDemos/PicturesForREADME/drawingBoard1.png)
+![drawingBoard1](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/drawingBoard1.png)
 
 Demo 中用到了以下知识点：
 
@@ -88,7 +88,7 @@ Demo 中用到了以下知识点：
 
 ## StopWatch
 
-![stopWatch](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/stopWatch.png)
+![stopWatch](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/stopWatch.png)
 
 StopWatch 是网上例子的模仿 Demo，主要练习了 StackView 及 AutoLayout ，以及简单的自定义 Button 方法。
 
@@ -122,7 +122,7 @@ StopWatch 是网上例子的模仿 Demo，主要练习了 StackView 及 AutoLayo
 
 ## WeiChat TableView
 
-![weichat](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/weichat.png)
+![weichat](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/weichat.png)
 
 WeiChat TableView 是利用 UITableView 来模仿微信聊天界面的 Demo，主要联系了自定义 Cell 的方法。
 
@@ -135,9 +135,9 @@ WeiChat TableView 是利用 UITableView 来模仿微信聊天界面的 Demo，�
 
 ## Photo Scroll
 
-![photoscroll0](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/photoscroll0.png)
+![photoscroll0](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/photoscroll0.png)
 
-![photoscroll1](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/photoscroll1.png)
+![photoscroll1](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/photoscroll1.png)
 
 Photo Scroll 是一个模仿别人的 Demo，练习了 UICollectionViewController 和 UIPageViewController 的使用。
 
@@ -151,9 +151,9 @@ Photo Scroll 是一个模仿别人的 Demo，练习了 UICollectionViewControlle
 
 ## Collection Demo1 & Interests
 
-![collectiondemo](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/collectiondemo.png)
+![collectiondemo](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/collectiondemo.png)
 
-![interests](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/interests.png)
+![interests](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/interests.png)
 
 Collection Demo1 & Interests 都是练习 UICollectionView 的 Demo。
 
@@ -166,6 +166,6 @@ Collection Demo1 & Interests 都是练习 UICollectionView 的 Demo。
 
 ## Alamofire Demo
 
-![alamofiredemo](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/alamofiredemo.png)
+![alamofiredemo](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/alamofiredemo.png)
 
 Alamofire Demo 是一个练习使用 Alamofire 来实现下载功能的 Demo。它实现了在下载过程中暂停，继续，取消下载的功能，并能在意外断网，又修复网络连接后恢复下载。
