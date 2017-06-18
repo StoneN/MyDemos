@@ -19,7 +19,6 @@ class SingleSectionViewController: UIViewController, UITableViewDelegate, UITabl
         // MARK: Initialize data from "Controls.plist"
         self.ctrlnames = NSArray(contentsOfFile: Bundle.main.path(forResource: "Controls", ofType: "plist")!) as? Array
         
-        print(self.ctrlnames ?? "nil")
         
         self.tableView = UITableView(frame: self.view.frame, style: .plain)
         self.tableView!.delegate = self

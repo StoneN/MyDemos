@@ -19,7 +19,10 @@ class MasterTableViewController: UITableViewController, UISearchResultsUpdating,
     
     
     // MARK: SearchBar funcs
+    
+    
     func updateSearchResults(for searchController: UISearchController) {
+        
         let searchBar = searchController.searchBar
         let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
         filterContentForSearchText(searchBar.text!, scope: scope)
@@ -29,11 +32,13 @@ class MasterTableViewController: UITableViewController, UISearchResultsUpdating,
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
     
+    
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         filteredDemos = demos.filter { demo in
             let levelMatch = (scope == "All") || (demo.level == scope)
-            return levelMatch && demo.name.lowercased().contains(searchText.lowercased())
+            return levelMatch && (demo.name.lowercased().contains(searchText.lowercased()) || searchText == "")
         }
+
         tableView.reloadData()
     }
 
@@ -55,9 +60,9 @@ class MasterTableViewController: UITableViewController, UISearchResultsUpdating,
             Demo(name: "WeiChat TableView", level: "Normal"),
             Demo(name: "Photo Scroll", level: "Normal"),
             Demo(name: "Alamofire Demo(!)", level: "Easy"),
-            Demo(name: "Photo Tagger(?)", level: "hard"),
-            Demo(name: "Collection View Demo1", level: "easy"),
-            Demo(name: "Interests", level: "hard"),
+            Demo(name: "Photo Tagger(?)", level: "Hard"),
+            Demo(name: "Collection View Demo1", level: "Easy"),
+            Demo(name: "Interests", level: "Hard"),
         ]
         setupSearchController()
     }
@@ -74,7 +79,11 @@ class MasterTableViewController: UITableViewController, UISearchResultsUpdating,
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searchController.isActive && searchController.searchBar.text != "" {
+        let scopeIndex = searchController.searchBar.selectedScopeButtonIndex
+        let searchOnlyByScope: Bool =
+            searchController.searchBar.text == "" && scopeIndex != 0
+        
+        if searchController.isActive && (searchController.searchBar.text != "" || searchOnlyByScope) {
             return filteredDemos.count
         }
         return demos.count
@@ -83,11 +92,17 @@ class MasterTableViewController: UITableViewController, UISearchResultsUpdating,
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DemoCell", for: indexPath)
         let demo: Demo
-        if searchController.isActive && searchController.searchBar.text != "" {
+        
+        let scopeIndex = searchController.searchBar.selectedScopeButtonIndex
+        let searchOnlyByScope: Bool =
+            searchController.searchBar.text == "" && scopeIndex != 0
+        
+        if searchController.isActive && (searchController.searchBar.text != "" || searchOnlyByScope) {
             demo = filteredDemos[indexPath.row]
         } else {
             demo = demos[indexPath.row]
         }
+        
         cell.textLabel!.text = demo.name
         cell.detailTextLabel!.text = demo.level
         

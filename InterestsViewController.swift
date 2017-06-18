@@ -11,7 +11,7 @@ import UIKit
 class InterestsViewController: UIViewController {
 
     var flowLayout: UICollectionViewFlowLayout!
-    var linearLayput: InterestsLinearCollectionViewLayout!
+    var linearLayout: InterestsLinearCollectionViewLayout!
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -25,10 +25,10 @@ class InterestsViewController: UIViewController {
         flowLayout.sectionInset = UIEdgeInsets(top: 20, left: 40, bottom: 20, right: 40)
         
         //初始化自定义布局
-        linearLayput = InterestsLinearCollectionViewLayout()
+        linearLayout = InterestsLinearCollectionViewLayout()
         
         //初始化Collection View
-        collectionView.collectionViewLayout = linearLayput
+        collectionView.collectionViewLayout = linearLayout
         
         //Collection View代理设置
         collectionView.delegate = self
@@ -52,7 +52,7 @@ class InterestsViewController: UIViewController {
     @IBAction func changeLayout(_ sender: UIBarButtonItem) {
         self.collectionView.collectionViewLayout.invalidateLayout()
         
-        let newLayout = collectionView.collectionViewLayout.isKind(of: InterestsLinearCollectionViewLayout.self) ? flowLayout : linearLayput
+        let newLayout = collectionView.collectionViewLayout.isKind(of: InterestsLinearCollectionViewLayout.self) ? flowLayout : linearLayout
         collectionView.setCollectionViewLayout(newLayout!, animated: true)
     }
     
@@ -62,7 +62,6 @@ class InterestsViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 extension InterestsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(interests.count)
         return interests.count
     }
     

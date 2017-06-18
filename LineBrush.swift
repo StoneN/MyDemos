@@ -13,7 +13,7 @@ class LineBrush: Brush {
     
     override func ownStroke(_ context: CGContext) {
         if let begin = self.begin, let end = self.end {
-            print("MMP!")
+          
             context.move(to: begin)
             context.addLine(to: end)
             context.setLineCap(.round)

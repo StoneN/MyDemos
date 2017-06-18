@@ -13,7 +13,7 @@ class CollectionViewDemo1Layout: UICollectionViewLayout {
     override var collectionViewContentSize: CGSize {
         let width = collectionView!.bounds.size.width - collectionView!.contentInset.left - collectionView!.contentInset.right
         let height = CGFloat((collectionView!.numberOfItems(inSection: 0) + 1) / 3) * (width / 3 * 2)
-        print("collectionView!.numberOfItems(inSection: 0) = \(collectionView!.numberOfItems(inSection: 0))")
+        
         return CGSize(width: width, height: height)
     }
     

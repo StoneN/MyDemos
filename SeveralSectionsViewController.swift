@@ -30,8 +30,6 @@ class SeveralSectionsViewController: UIViewController, UITableViewDelegate, UITa
                 "UITableView"])
         ]
         
-        print(self.allNames ?? "nil")
-        
         self.adHeaders = [
             "Common UIKit Controls",
             "Advanced UIKit Controls"
