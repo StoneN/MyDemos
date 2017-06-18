@@ -5,7 +5,7 @@ A project about some demos for learning iOS development.（Some of them are imit
 
 ## 主界面
 
-![main](MyDemos/PicturesForREADME/main.png)
+![main](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/main.png)
 
 该界面使用 UITableView 展示项目所包含的所有 Demo，并通过 UISearchController 实现了对 TableViewCell 内容的搜索。在该界面的实现过程中我进一步熟练了 UITableView 的使用方法，同时学习了 UISearchController 在结合 UITableView 时的基本用法：
 
