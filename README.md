@@ -59,7 +59,7 @@ func filterContentForSearchText(_ searchText: String, scope: String = "All") {
 
 ## Learn UITableView
 
-![severalsections](https://github.com/StoneN/MyDemos/tree/master/PicturesForREADME/severalsections.png)
+![severalsections](https://raw.githubusercontent.com/StoneN/MyDemos/master/PicturesForREADME/severalsections.png)
 
 ![todo](/Users/stone/Desktop/MyDemos/PicturesForREADME/todo.png)
 
